@@ -15,7 +15,12 @@ const gradientAnimation = keyframes`
 `;
 
 const GradientText = styled.span`
-  background: linear-gradient(to right, rgb(96, 165, 250), rgb(192, 132, 252), rgb(244, 114, 182));
+  background: linear-gradient(
+    to right,
+    rgb(96, 165, 250),
+    rgb(192, 132, 252),
+    rgb(244, 114, 182)
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -103,14 +108,14 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </Link>
 
-            <a
-              href="https://github.com"
+            <Link
+              href="https://github.com/thewoowon/kerr-black-hole"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 border-2 border-white/20 rounded-full font-semibold text-white text-lg hover:bg-white/10 hover:border-white/40 transition-all duration-300 hover:scale-105"
             >
               View Source Code
-            </a>
+            </Link>
           </div>
 
           {/* Tech stack */}
